@@ -7,75 +7,12 @@
 <!-- favicon-->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 
-
 <style>
  h1 {
   font-size: 75px;
  }
 </style>
 
-<style>
-.sidebar {
-  height: 100%; 
-  width: 0; 
-  position: fixed; 
-  z-index: 1; 
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  transition: 0.5s; 
-}
-
-.sidebar a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-
-.sidebar a:hover {
-  color: transparent;
-}
-
-.sidebar .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-
-
-.openbtn {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: transparent;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-}
-
-.openbtn:hover {
-  background-color: transparent;
-}
-
-
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
-}
-
-
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
-}
-</style>
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
@@ -93,24 +30,6 @@ function closeNav() {
 * {
   box-sizing: border-box;
 }
-
-.column {
-  float: left;
-  padding-top: 
-  padding: 50px;
-   max-width: 100%;
-  height: auto;
-}
-
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
- max-width: 100%;
-  height: auto;
-     
-}
 </style>
 
 </head>
@@ -125,7 +44,7 @@ body {
   background-image: url(images/binary-code.png);
   background-attachment: fixed;
   background-repeat: repeat-x;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   width: 100%;
   height: auto;
@@ -145,14 +64,14 @@ body {
   <button class="openbtn" onclick="openNav()">&#9776;</button>
 </div>
 
-<h1 style="text-align: center; color: white;">About Me</h1>
+<h1 style="text-align: center; color: white; font-size: 6vw">About Me</h1>
 
- <div class="row">
+ <div class="row" id="images">
   <div class="column">
-    <img src="images/headshot2.jpg" alt="Portrait" height=650px width=600px style="padding-left: 150px">
+    <img src="images/headshot2.png" class="responsive" alt="Portrait" width=70% height=70%>
   </div>
-  <div class="column" style="padding-left: 100px">
-    <img src="images/quote.png" alt="Quote" height=451px width=441px align="right" style="padding-top: 100px; padding-left: 60px">
+  <div class="column">
+    <img src="images/quote.png" class="responsive" alt="Quote" >
   </div>
  </div>
  
