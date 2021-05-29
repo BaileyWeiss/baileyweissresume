@@ -75,28 +75,37 @@ body {
 <h1 style="text-align: center; color: white;">Portfolio</h1>
 
 <h2 style="text-align: center; color: white;">Information Technology Work</h2>
+
 <h2 style="text-align: center; color: white;">
 ● Website Design (2020) Designed a multitude of websites for different clientele across different platforms.
 I includ navigation bars for aspects of each client’s works and contact information. HTML, CSS, JavaScript
 </h2>
+
 <h2 style="text-align: center; color: white;"h2>
 ● CLion C++ (2020). Created a money saving program to help with clients money management.
 </h2>
+
 <h2 style="text-align: center; color: white;">
 ● Network/Linux (2020). Fixed Cingolani Content Soultions Inc. networking virus by isolating it in a virtual Linux environment
 and learning exactly how it worked before figuring out the best possible scenario for getting rid of the malware.
 </h2>
+
 <center>
 <img style="width: 50%; height: 50%;"src="images/cingolani.jpg" alt="EER Diagram">
 </center>
+
 <h2 style="text-align: center; color: white;"h2>
 ● My Sequel Workbench (2020). Created multiple databases and EER diagrams for different corporations.
 </h2>
+
+
+<style>
+body {font-family: times}
+</style>
+
 <center>
-<img style="width: 50%; height: 50%;"src="images/EER.png" alt="EER Diagram">
+<img id="myImg" src="images/EER.png" alt="EER Diagram" style="width:100%;max-width:300px">
 </center>
-
-
 
 <h2 style="text-align: center; color: white; padding-top: 100px;">Photography Portfolio</h2>
 <h2 style="text-align: center; color: white;">My photography career has helped me become a master at multiple softwares/platforms
@@ -104,57 +113,6 @@ such as Adobe Photoshop, Lightroom, Facetune, and VSCO.</h2>
 <h2 style="text-align: center; color: white;">Through these softwares I am also proficient in graphic design work. These edited photos should atest to
 my skillset.</h2>
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.header {
-  text-align: center;
-  padding: 32px;
-}
-
-.row {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-.column {
-  -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    -ms-flex: 100%;
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-</style>
 
 <center>
 <div class="row"> 
@@ -203,6 +161,30 @@ body {
 
 </center>
 
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+};
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+};
+</script>
 
 <footer>
     &copy; Copyright 2020 Bailey Weiss
