@@ -85,6 +85,67 @@ body {
 
 <h1 style="text-align: center; color: white;">Contact Me</h1>
 
+<!--Contact form-->
+ <div class="contact-box" style="padding-bottom: 200px">
+  <!--Left side of the contact form-->
+        <div class="contact-left">
+         <h3>Send your request</h3>
+         <form action="mail.php" method="post">
+      <!--Row Number 1-->
+          <div class="input-row">
+           <!--First Name label-->
+           <div class="input-group">
+            <label>First Name</label>
+            <input type="text" name="fname" placeholder="John">      
+           </div>
+           <!--Email-->
+           <div class="input-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="JohnDoe1234@JohnDoe.com">      
+           </div>
+          </div>
+      <!--Row Number 2-->
+          <div class="input-row">
+           <!--Last Name label-->
+           <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" name="lname" placeholder="Doe">      
+           </div>
+           <!--Subject-->
+           <div class="input-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Purchase">      
+           </div>
+          </div>
+          
+          <!--Message area-->
+          <label>Message</label>
+        <textarea rows="5" name="message" placeholder="Your Message"></textarea>
+        
+        <!--Button to submit-->
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+          </form>
+        </div>
+        
+        
+        
+  <!--Right side of the contact form-->
+        <div class="content-right">
+         <h3>Reach Out!</h3>
+         
+         <table>
+           <tr>
+               <td>Email</td>
+           </tr>
+           <tr>
+             <td>BaileyTaylorPhotography@gmail.com</td>
+           </tr>
+         </table>
+        </div>
+ <!--End of contact box-->
+ </div>
+
 <footer>
     &copy; Copyright 2020 Bailey Weiss
  </footer>
