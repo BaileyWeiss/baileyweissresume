@@ -3,6 +3,7 @@
 <html>
 <head>
    <link rel="stylesheet" type="text/css" href="styles.css">
+   <script src="Java.js"></script>
         <title>Bailey Weiss Resume</title>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
@@ -80,71 +81,39 @@ body {
 </div>
 
 <div id="main">
-  <button class="openbtn" onclick="openNav()">&#9776;</button>
+  <button class="openbtn" onclick="openNav();">&#9776;</button>
 </div>
 
 <h1 style="text-align: center; color: white;">Contact Me</h1>
 
-<!--Contact form-->
- <div class="contact-box" style="padding-bottom: 200px">
-  <!--Left side of the contact form-->
-        <div class="contact-left">
-         <h3>Send your request</h3>
-         <form action="mail.php" method="post">
-      <!--Row Number 1-->
-          <div class="input-row">
-           <!--First Name label-->
-           <div class="input-group">
-            <label>First Name</label>
-            <input type="text" name="fname" placeholder="John">      
-           </div>
-           <!--Email-->
-           <div class="input-group">
-            <label>Email</label>
-            <input type="email" name="email" placeholder="JohnDoe1234@JohnDoe.com">      
-           </div>
-          </div>
-      <!--Row Number 2-->
-          <div class="input-row">
-           <!--Last Name label-->
-           <div class="input-group">
-            <label>Last Name</label>
-            <input type="text" name="lname" placeholder="Doe">      
-           </div>
-           <!--Subject-->
-           <div class="input-group">
-            <label>Subject</label>
-            <input type="text" name="subject" placeholder="Purchase">      
-           </div>
-          </div>
-          
-          <!--Message area-->
-          <label>Message</label>
-        <textarea rows="5" name="message" placeholder="Your Message"></textarea>
-        
-        <!--Button to submit-->
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-          </form>
-        </div>
-        
-        
-        
-  <!--Right side of the contact form-->
-        <div class="content-right">
-         <h3>Reach Out!</h3>
-         
-         <table>
-           <tr>
-               <td>Email</td>
-           </tr>
-           <tr>
-             <td>BaileyTaylorPhotography@gmail.com</td>
-           </tr>
-         </table>
-        </div>
- <!--End of contact box-->
- </div>
+
+<center>
+ <body>
+    <div class="container">
+        <form action="mail.php" method="POST" class="form">
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message!</button>
+            </div>
+        </form>
+    </div>
+</body>
+</center>
 
 <footer>
     &copy; Copyright 2020 Bailey Weiss
