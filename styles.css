@@ -1,73 +1,55 @@
-/*form*/
-.container{
-    width:500px;
-    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
-    padding:2em;
-    background-color:#fff;
-}
-.form-group{
-    margin-bottom:1.5em;
-    transition:all .3s;
-}
-.form-label{
-    font-size:.75em;
-    color:var(--font-color);
-    display:block;
-    opacity:0;
-    transition: all .3s;
-    transform:translateX(-50px);
-}
-.form-control{
-    box-shadow:none;
-    border-radius:0;
-    border-color:#ccc;
-    border-style:none none solid none;
-    width:100%;
-    font-size:1.25em;
-    transition:all .6s;
-}
-.form-control::placeholder{
-    color:#aaa;
-}
-.form-control:focus{
-    box-shadow:none;
-    border-color:var(--font-hover-color);
-    outline:none;
-}
-.form-group:focus-within{
-    transform:scale(1.1,1.1);
+/*Contact Page*/
+.contact-box{
+display: flex;
 }
 
-.form-control:invalid:focus{
-    border-color:red;
-}
-.form-control:valid:focus{
-    border-color:green;
+.contact-left {
+ flex-basis: 60%;
+ padding: 40px 60px;
 }
 
-.btn{
-    background: 0 0 #fff;
-    border:1px solid #aaa;
-    border-radius:3px;
-    color:var(--font-color);
-    font-size:1em;
-    padding:10 50px;
-    text-transform:uppercase;
+.contact-right {
+ flex-basis: 40%;
+ padding: 40px;
+ color: #fff;
 }
-.btn:hover{
-    border-color:var(--font-hover-color);
-    color:var(--font-hover-color);
+
+.input-row{
+ display: flex;
+ justify-content: space-between;
+ margin-bottom: 20px;
 }
+
+.input-row .input-group {
+flex-basis: 45%; 
+}
+
+input {
+ width: 100%;
+ border: none;
+ border-bottom: 1px solid #ccc;
+ outline: none;
+ padding-bottom: 5px;
+}
+
 textarea{
-    resize:none;
+ width: 100%;
+ border: 1px solid #ccc;
+ outline: none;
+ padding: 10px;
+ padding-bottom: 100px;
+ box-sizing: border-box;
 }
 
+label{
+ margin-bottom: 6px;
+ display: block;
+ color: #1c00b5;
+}
 
-
-.focused > .form-label{
-    opacity:1;
-    transform:translateX(0px);
-
+button{
+border: 1px solid #ccc;
+box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
 }
 
 /*body*/
